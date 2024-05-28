@@ -17,7 +17,9 @@ const {
 
 console.log("Valor de getUsuarios: ", getUsuarios);
 
-app.listen(3000, ()=> console.log("Server listening on port 3000"))
+const port = process.env.PORT_SERVER || 3000
+
+app.listen(port, ()=> console.log("Server listening on port: "+port))
 
 app.use(cors());
 app.use(express.json());
