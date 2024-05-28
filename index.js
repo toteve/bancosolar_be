@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const app = express();
 
 // importar funciones del modulo consultas.js
@@ -18,7 +19,7 @@ console.log("Valor de getUsuarios: ", getUsuarios);
 
 app.listen(3000, ()=> console.log("Server listening on port 3000"))
 
-
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
