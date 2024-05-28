@@ -23,10 +23,10 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // ruta raiz devuelve el index.html listo
-app.get('/', (req, res) => {
-    console.log(__dirname + '/index.html')
-    res.sendFile(__dirname + '/index.html');
-})
+// app.get('/', (req, res) => {
+//     console.log(__dirname + '/index.html')
+//     res.sendFile(__dirname + '/index.html');
+// })
 
 // RUTAS ASOCIADAS CON TRANSFERENCIAS
 
