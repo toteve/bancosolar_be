@@ -8,7 +8,6 @@ const pool = new Pool({
   host: HOST,
   password: PASSWORD,
   database: DATABASE,
-  port: PORT,
 });
 
 // funcion BD para ingresar un usuario
